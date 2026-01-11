@@ -1,14 +1,14 @@
 /* CPM.H */
-#define BDOS_CONIN   1
-#define BDOS_CONOUT  2
-#define BDOS_CONST   11
 
 char bios();
-/*
 int bdos();
-*/
 
+/* console status: 0 = no key, non-zero = key ready */
 int cpm_kbhi();
+
+/* console input: returns 0..127 (7-bit) */
 int cpm_getc();
+
+/* console output: prints one character */
 int cpm_putc();
 

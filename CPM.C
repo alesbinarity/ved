@@ -1,20 +1,22 @@
-/* CPM.C */
+/* CPM.C - CP/M console I/O via BIOS calls */
+
 #include "CPM.H"
 
-int kgetc()
+int cpm_kbhi()
 {
-    return bios(3);
+    return bios(2, 0) != 0;
 }
 
-int kbhit()
+
+int cpm_getc()
 {
-    return bios(2);
+    return bios(3, 0);
 }
 
-int kputc(ch)
+int cpm_putc(ch)
 int ch;
 {
-    bios(4, ch);         /* CONOUT */
+    bios(4, ch);
     return 0;
 }
 
