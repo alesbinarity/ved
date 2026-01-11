@@ -1,55 +1,39 @@
+# BDSC COMPILER FILES
+C.CCC
+c.ccc
+
+
 # Prerequisites
-*.d
+
 
 # Object files
-*.o
-*.ko
-*.obj
-*.elf
+*.CRL
+*.crl
 
 # Linker output
-*.ilk
-*.map
-*.exp
+
 
 # Precompiled Headers
-*.gch
-*.pch
+
 
 # Libraries
-*.lib
-*.a
-*.la
-*.lo
+*.lbr
+*.LBR
 
 # Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+
 
 # Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+*.COM
+*.com
 *.hex
+*.HEX
 
 # Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
 
 # debug information files
 *.dwo
+
+# logs
+*.log
+*.LOG
